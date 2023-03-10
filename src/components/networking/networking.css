@@ -1,4 +1,3 @@
-
 .net-container {
     display: flex;
     flex-direction: column;
@@ -33,11 +32,11 @@
     width: 240px;
     height: 290.83px;
     border: 0.833333px solid #DE00AC;
-    border-radius: 0px 0px 8.33px  8.33px;
+    border-radius: 0px 0px 8.33px 8.33px;
     border-top: none;
     margin-top: -117px;
     padding-top: 20px;
-    
+
 
 }
 
@@ -71,5 +70,6 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 25px;
+    padding-bottom: 10px;
 }

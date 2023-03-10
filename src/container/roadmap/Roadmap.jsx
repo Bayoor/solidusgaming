@@ -3,8 +3,8 @@ import "./roadmap.css";
 
 const Roadmap = () => {
   return (
-    <section className="roadmap">
-      <div className="roadmap-div"/>
+    <section className="roadmap" id="roadmap">
+      <div className="roadmap-div" />
       <div className="roadmap-section">
         <h3 className="roadmap-text">Q1 2023 </h3>
         <div className="container" />

@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="footer-links ">
         <h2>Useful Links</h2>
         <p>Home</p>
-        <p>About</p>git
+        <p>About</p>
         <p>Roadmap</p>
         <p>Games</p>
         <p>Others</p>

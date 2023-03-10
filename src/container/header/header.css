@@ -76,7 +76,7 @@
     align-items: center;
     gap: 100px;
     text-align: center;
-    background: #190721;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(52, 13, 56, 1) 50%, rgba(7, 2, 23, 1) 77%);
 }
 
  .objective__heading {
