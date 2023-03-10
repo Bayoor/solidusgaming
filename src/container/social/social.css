@@ -1,0 +1,29 @@
+.social_network {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #070315;
+    padding-bottom: 40px;
+}
+
+.social_network-heading {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin-top: 50px;
+}
+
+
+.social_network-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    place-items: center center;
+}
