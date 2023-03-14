@@ -15,6 +15,8 @@ import Roadmap from "./container/roadmap/Roadmap";
 import Social from "./container/social/Social";
 import Footer from "./components/footer/Footer";
 
+// import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="solidus__app">
@@ -22,6 +24,7 @@ function App() {
         <Navbar />
         <Header />
       </div>
+      
       <div className="flex-content">
         <Services
           img={featuresIcon}
@@ -43,6 +46,7 @@ function App() {
           p="A unique voting idea that allows gamers to decide how games will play out, which course the project takes and many other polls that will take place while the project grows."
         />
       </div>
+
       <div className="app-token">
         <div className="app-token_feature">
           <h2>Token features</h2>
@@ -74,14 +78,15 @@ function App() {
             text="Our project has a audited smart contract interacting with our games."
           />
         </div>
-        <div className="app-roadmap">
-          <div className="roadmap-content">
-            <h2 className="roadmap-heading">Roadmap</h2>
-          </div>
-          <Roadmap />
-        </div>
-      <Social />
       </div>
+
+      <div className="app-roadmap">
+        <div className="roadmap-content">
+          <h2 className="roadmap-heading">Roadmap</h2>
+        </div>
+        <Roadmap />
+      </div>
+      <Social />
       <Footer />
     </div>
   );

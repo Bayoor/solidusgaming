@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 150px;
-    
+
 }
 
 
@@ -104,4 +104,76 @@ li::marker {
     justify-content: center;
     align-items: flex-start;
     margin-left: 120px;
+}
+
+@media screen and (max-width: 576px) {
+    .roadmap-text {
+        font-size: 2rem;
+        line-height: 24px;
+        margin-left: -40px;
+        margin-top: 80px;
+
+    }
+
+    .roadmap-list>li {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 40px;
+
+    }
+
+    .flex {
+        margin-left: 30px;
+        /* padding-right: 20px; */
+    }
+
+    .roadmap-div {
+        transform: translate(-145px, 915px);
+        height: 820px;
+
+    }
+
+    .container,
+    .wrapper,
+    .div {
+        top:60px;
+        
+    }
+
+    .container {
+        left: 20px;
+    }
+
+    .wrapper {
+        left: 65px;
+    }
+
+    .div {
+        left: 65px
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+
+    .wrapper,
+    .div {
+        top:58px;
+        left: 48px;
+    }
+
+   
+}
+
+@media screen and (max-width: 360px) {
+    
+
+    .wrapper,
+    .div {
+       
+        left: 42px;
+    }
+
+   
 }

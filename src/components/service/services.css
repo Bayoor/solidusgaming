@@ -46,3 +46,18 @@ section {
 
     color: rgba(255, 255, 255, 0.75);
 }
+
+@media screen and (max-width: 576px) {
+    .service__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 20px;
+       
+    }
+    
+}

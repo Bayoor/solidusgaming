@@ -1,13 +1,13 @@
 .hero__section {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero__section>p {
-    width: 1181px;
-    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     text-align: center;
     font-family: var(--font-family);
     font-weight: 700;
@@ -15,7 +15,7 @@
     line-height: 115px;
     color: var(--text-color);
 
-    margin: 60px auto 0px auto
+    margin: 80px auto 0px auto;
 }
 
 .hero__section-btn {
@@ -31,6 +31,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
     margin-top: 60px;
     color: var(--text-color);
 }
@@ -70,6 +79,7 @@
 }
 
 .objective__section {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -79,9 +89,11 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(52, 13, 56, 1) 50%, rgba(7, 2, 23, 1) 77%);
 }
 
- .objective__heading {
-    width: 35%;
-} 
+.objective__heading {
+    width: 457.81px;
+    height: 223px;
+}
+
 
 .objective__heading>h2 {
     display: flex;
@@ -97,7 +109,6 @@
 }
 
 .objective__text {
-    flex:0.5;
     display: flex;
     align-items: center;
     font-family: var(--font-family);
@@ -105,21 +116,125 @@
     font-size: 1.8rem;
     line-height: 30px;
     text-align: center;
-
     color: rgba(255, 255, 255, 0.75);
 
     margin-top: 40px;
-    padding: 0 15px 0px 0px;
-}
-
-.objective__image {
-   display: flex;
 }
 
 .objective__image>img {
     display: flex;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .hero__section>p {
+        font-size: 4.5rem;
+        line-height: 95px;
+    }
+
+    .objective__image>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .objective__section {
+        padding: 20px 15px;
+    }
+
+    .objective__heading {
+        width: 100%;
+        gap: 50px;
+        /* outline: 2px red solid; */
+        transform: translateX(20px);
+    }
+
+    .objective__heading>h2 {
+        transform: translateY(20px);
+    }
+
+    .objective__text {
+        font-size: 1.4rem;
+        line-height: 24px;
+    }
+
+    .objective__heading>h2 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .hero__section>p {
+        font-size: 3rem;
+        line-height: 60px;
+        padding: 0 30px;
+    }
+
+    .game-btn,
+    .token-btn {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .game-btn {
+        width: 120px;
+        height: 50px;
+        background: #0165E7;
+        border: 1px solid #0165E7;
+        border-radius: 21px;
+
+
+    }
+
+    .token-btn {
+        width: 120px;
+        height: 50px;
+        background: #DE00AC;
+        border: 1px solid #DE00AC;
+        border-radius: 21px;
+    }
+
+    .objective__heading {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        transform: translateX(-10px);
+
+    
+    }
+
+    .objective__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: -20px 10px;
+        
+    }
+
+    .objective__text {
+        font-size: 1.2rem;
+        line-height: 20px;
+        /* padding: 0 10px; */
+        transform: translateY(-60px);
+    }
+
+    .objective__image>img {
+        transform: translateY(-80px);
+    }
+
+
+
+
 }

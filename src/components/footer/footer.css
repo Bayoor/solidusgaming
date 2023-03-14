@@ -1,107 +1,103 @@
 .footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding-top: 40px;
-
-
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(52, 13, 56, 1) 50%, rgba(7, 2, 23, 1) 77%);
-
+    padding: 40px 0 20px 0;
 }
 
-.footer-logo {
+.footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
+
 
 .footer-logo>img {
     width: 254px;
     height: 219.77px;
+    
+
 }
 
-.footer-para {
-    display: flex;
-    align-items: center;
+
+.footer-content>p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-
+    display: flex;
+    align-items: center;
     color: rgba(255, 255, 255, 0.75);
+
     margin-top: 20px;
 }
 
-.footer-logo>div {
+.footer-input {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 16px;
     gap: 10px;
-    padding-bottom: 20px;
-}
 
-.footer-logo>div>input {
-    width: 199px;
-    height: 49px;
-    background: #070315;
-    border: 1px solid #ADA2C3;
-    border-radius: 7px;
-    text-indent: 10px;
+    margin-top: 16px;
     
 }
 
-.footer-logo>div>button {
+.footer-input>input {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 130px;
+    width: 199px;
     height: 49px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    color: rgba(255, 255, 255, 0.75);
+    background: #070315;
+    border: 1px solid #ADA2C3;
+    border-radius: 7px;
+    text-indent: 5px;
 
+}
+
+.footer-input>button {
+    width: 130px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     color: rgba(255, 255, 255, 0.75);
     background: #DE00AC;
     border-radius: 7px;
 }
 
-.footer-links {
+.footer-flex {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
-    margin-top: -150px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px; 
+    /* align-items: center;  */
+
 }
 
-
-.terms {
-    margin-top: -230px;
-}
-
-h2 {
-
-
+.footer-links>h2 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 30px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-
     color: rgba(255, 255, 255, 0.86);
 
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-p {
+.footer-links>p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -109,35 +105,56 @@ p {
     display: flex;
     align-items: center;
     color: rgba(255, 255, 255, 0.86);
-    padding-top: 10px;
-}
 
+    margin-top: 10px;
+
+}
 .footer-social_media {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
+    flex-direction: column;  
 }
 
-.footer-social_media>p {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    width: 230px;
-    /* outline: 1px solid red; */
-    /* line-height: 16px; */
-    padding-top: 10px;
-
-
+.footer-social_media>h2 {
+    margin-bottom: 10px;
 }
 
 .footer-social_media>p>img {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 20px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
+    outline: 1px rgb(73, 5, 9) solid;
+    margin-right: 10px;
+   
+}
 
+@media screen  and (max-width: 992px) {
+    .footer-logo>img {
+        width: 120px;
+        height: 90px;
+        
+
+    } 
+
+    .footer-content>p {
+
+        font-size: 16px;
+        line-height: 18px;
+    
+        margin-top: 20px;
+    }
+
+    .footer-links>h2 {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links>p {
+        font-size: 14px;
+        line-height: 24px;
+        
+    
+        margin-top: 10px;
+    
+    }
+    
 }

@@ -4,10 +4,6 @@ body {
   padding-bottom: 170px;
 }
 
-.section__background {
-  /* background: #0f7e41; */
-  
-}
 
 .flex-content {
   display: flex;
@@ -24,10 +20,15 @@ body {
 }
 
 .app-token {
-  width: 100%;
-  display: grid;
-  place-items: center;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   background: #070315;
+  /* outline: 2px solid red; */
+  padding: 0 20px;
 }
 
 .app-token_display {
@@ -96,4 +97,64 @@ body {
 
   margin-top: 30px;
 
+}
+
+@media screen and (max-width: 992px) {
+  .flex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .app-token_display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app-border {
+    border-top: 2px solid #ADA2C3;
+    border-bottom: 2px solid #ADA2C3;
+    border-left: none;
+    border-right: none;
+    padding: 25px 0px;
+
+  }
+
+  .services__content {
+    padding: 0 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+  /* .app-token {
+    overflow: hidden;
+  } */
+  
+  .app-token_display {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 0px;
+    gap: 20px ;
+    
+  }
+
+  .app-token_feature>h2 {
+    font-size: 3rem;
+    line-height: 24px;
+  }
+
+  .app-token_feature>p {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+    line-height: 24px;
+    
+    margin-top: -20px;
+  }
 }

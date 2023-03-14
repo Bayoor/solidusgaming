@@ -23,10 +23,7 @@ const Header = () => {
         <div className="objective__heading">
           <h2>Our Mission</h2>
           <p className="objective__text">
-            Combining these three major key elements, which are vital for our
-            platform.Give power to the community by having their voices heard
-            while we, at Solidus, provide the tools: an immersive Gaming
-            environment powered by Blockchain technology.
+            Combining these three major key elements, which are vital for our platform.Give power to the community by having their voices heard while we, at Solidus, provide the tools: an immersive Gaming environment powered by Blockchain technology.
           </p>
         </div>
         <div className="objective__image">
